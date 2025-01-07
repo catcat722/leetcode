@@ -5,6 +5,19 @@ public class User {
     private String username;
     private String password;
 
+    //手机号
+    private String phone;
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+
+
     public void setId(Integer id){
         this.id = id;
     }
