@@ -14,6 +14,9 @@
         select password from user where username = #{username}
     </select>
     <insert id="save">
-        insert into user(username,password) value (#{username},#{password})
+        insert into user(username,password,phone) value (#{username},#{password},#{phone})
     </insert>
+    <select id="findByPhone" resultType="User">
+        select * from user where phone=#{phone}
+    </select>
 </mapper>
